@@ -12,9 +12,19 @@ The run_analysis.R script does the following transformations
 2. Repeat step 1 for Label and Subject
 3. Read the features data 
 4. Using R expressions and grep() function the indexes of the features list containing the mean and std are extracted
-5. The indexes are then used to extract the Data concerning the mean and std only
+5. The indexes are then used to extract the Data concerning the mean and std only using data frame subsetting
+6. The activities file is read and used to map the features to corressponding activity names 
+7. Fianlly a merged data set is obtained by combining the Subject, Label and the extracted Data using cbind()
+8. From the cleaned data another data set is obtained that provides the mean of the measurements for each activity of each subject
+9. the data is then written into a text file using table.write() with row.name=FALSE
+### Description of the Final Data Set
+- The data set includes 180 obs. of  68 variables
+- The first row provides column names (since row.name was set to false)
+- Provides the mean value for each equipment measurement pertaining to mean and std for each activity of each subject
+- Information of 6 activities of 30 patients 
+- Activities: 1.Walking 2.Walking Upstairs 3.Walking Downstairs 4.Sitting 5.Standing 6.Laying 
 
-###For each record it is provided:
+### For each record it is provided:
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
