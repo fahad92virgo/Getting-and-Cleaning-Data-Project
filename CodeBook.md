@@ -17,6 +17,7 @@ The run_analysis.R script does the following transformations
 7. Fianlly a merged data set is obtained by combining the Subject, Label and the extracted Data using cbind()
 8. From the cleaned data another data set is obtained that provides the mean of the measurements for each activity of each subject
 9. the data is then written into a text file using table.write() with row.name=FALSE
+
 ### Description of the Final Data Set
 - The data set includes 180 obs. of  68 variables
 - The first row provides column names (since row.name was set to false)
