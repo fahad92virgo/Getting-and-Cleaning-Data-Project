@@ -13,7 +13,7 @@ The run_analysis.R script does the following transformations
 3. Read the features data 
 4. Using R expressions and grep() function the indexes of the features list containing the mean and std are extracted
 5. The indexes are then used to extract the Data concerning the mean and std only using data frame subsetting
-6. The activities file is read and used to map the features to corressponding activity names 
+6. The activities file is read and used to map the label to corressponding activity names 
 7. Fianlly a merged data set is obtained by combining the Subject, Label and the extracted Data using cbind()
 8. From the cleaned data another data set is obtained that provides the mean of the measurements for each activity of each subject
 9. the data is then written into a text file using table.write() with row.name=FALSE
