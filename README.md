@@ -11,3 +11,11 @@ This repository contains all the files related to the final course project for t
 - Run the script in R studio 
 - Make sure you set your working directory where you unzipped the subfolders.
 - Run the script and verify you obtain "final_dataSet.txt" in your working directory.
+
+### Explanation of the script
+- The script is broken down into five tasks:
+
+#### Task 1: Merge the training and the test sets to create one data set.
+1. Aquire Data: Read the "train/X_train.txt" and "test/X_test.txt" using read.tables() and merge using rbind()
+2. Acquire Label: Read the "train/y_train.txt" and "test/y_test.txt" using read.tables() and merge using rbind()
+3. Acquire Subject: Read the "train/subject_train.txt" and "test/subject_test.txt" using read.tables() and merge using rbind()
